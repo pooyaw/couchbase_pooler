@@ -1,0 +1,21 @@
+[package]
+name = "r2d2_couchbase"
+version = "0.1.0"
+authors = ["Pooya Woodcock <pooya@packetcloud.net>"]
+license = "MIT/Apache-2.0"
+description = "Couchbase support for the r2d2 connection pool"
+repository = "https://github.com/pooyaw/r2d2_couchbase"
+documentation = "https://github.com/pooyaw/r2d2_couchbase"
+keywords = ["couchbase", "pool", "database", "r2d2"]
+
+[lib]
+name = "r2d2_couchbase"
+path = "src/lib.rs"
+
+[dependencies]
+r2d2 = "0.7"
+couchbase = { version="0.3.0", path = "../couchbase-rs/couchbase" }
+
+[dev-dependencies]
+serde_json = "0.7.1"
+rustc-test = "0.1"
